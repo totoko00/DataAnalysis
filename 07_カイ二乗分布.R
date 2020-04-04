@@ -1,0 +1,5 @@
+curve(dchisq(x,1),0,30,col="red",add=TRUE)
+curve(dchisq(x,3),0,30,col="green",add=TRUE)
+curve(dchisq(x,5),0,30,col="blue",add=TRUE)
+curve(dchisq(x,10),0,30,col="brown",add=TRUE)
+curve(dchisq(x,20),0,30,col="purple",add=TRUE)

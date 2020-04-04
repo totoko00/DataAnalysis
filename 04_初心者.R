@@ -1,0 +1,16 @@
+x <- c(1,2,3,2,7,5,9,1)
+y <- c(14,20,21,15,36,27,40,8)
+ans <- lm(y~x)
+plot(x,y)
+lines(x,fitted(ans),col="red")
+dev.off()
+f1 <- "sample1.png"
+f2 <- "sample2.jpeg"
+png(f1,width=800,height=600)
+plot(x,y)
+lines(x,fitted(ans),col="red")
+dev.off()
+plot(x,y)
+lines(x,fitted(ans),col="red")
+dev.copy(jpeg,f2,width=900,height=675)
+dev.off()
